@@ -1,6 +1,7 @@
 // Node.JS
 import React from "react";
 import ReactDOM from "react-dom";
+import $ from "jquery";
   
 class App extends React.Component {
 
@@ -9,6 +10,7 @@ class App extends React.Component {
   }
 
   handleStockSubmit(event) { 
+    console.log("Handling stock submit");
     $.get('/stock?symbol='+document.querySelector('#stock').value);
   }
 
