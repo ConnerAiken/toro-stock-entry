@@ -8,8 +8,8 @@ class App extends React.Component {
     super(props); 
   }
 
-  handleStockSubmit(event) {
-    console.log(event);
+  handleStockSubmit(event) { 
+    $.get('/stock?symbol='+document.querySelector('#stock').value);
   }
 
   render() {

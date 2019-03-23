@@ -15,6 +15,6 @@ app.get('/stock', (req, res) => {
     console.log(req);
 });
 
-app.listen(process.env.port, () => {
-    utils.log(`Server has started and is listening on port ${process.env.port}!`)
+app.listen(process.env.PORT, () => {
+    utils.log(`Server has started and is listening on port ${process.env.PORT}!`)
 });

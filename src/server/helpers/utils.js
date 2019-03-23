@@ -1,11 +1,11 @@
 export default {
     log(msg, type = 0) {
         if(type === 1) {
-            console.warn(`[${process.env.appName}] ${msg}`);
+            console.warn(`[${process.env.APP_NAME}] ${msg}`);
         }else if(type === 2) {
-            console.error(`[${process.env.appName}] ${msg}`);
+            console.error(`[${process.env.APP_NAME}] ${msg}`);
         }else {
-            console.log(`[${process.env.appName}] ${msg}`);
+            console.log(`[${process.env.APP_NAME}] ${msg}`);
         }
     },
     loadENV() {
