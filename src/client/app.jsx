@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   handleStockSubmit(event) { 
-    console.log("Handling stock submit");
+    alert("Handling stock submit");
     $.get('/stock?symbol='+document.querySelector('#stock').value);
   }
 
